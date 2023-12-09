@@ -88,8 +88,9 @@
    - **Product Details:** Get comprehensive information about each product, including specifications, pricing, and user reviews.
 
    - **Theme Switching:** Enjoy the website in your preferred light or dark mode with the theme toggle feature.
-     > [Live Link](https://brand-shop-acfd4.firebaseapp.com/)
 
-   <br/>
-   <br/>
-    <p align="right"> <img src="https://komarev.com/ghpvc/?username=sabbir-offc&label=Profile%20views&color=0e75b6&style=flat" alt="sabbir-offc" /> </p>
+   > [Live Link](https://brand-shop-acfd4.firebaseapp.com/)
+
+<br/>
+<br/>
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=sabbir-offc&label=Profile%20views&color=0e75b6&style=flat" alt="sabbir-offc" /> </p>
