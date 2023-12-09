@@ -16,18 +16,23 @@
 
 - ⚡ Fun fact **Using HTML you can ack NASA!**
 
-<h3 align="left">Connect with me:</h3>
+### Connect with me: 📭
+
 <p align="left">
 <a href="https://twitter.com/sabbir_offc" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sabbir_offc" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/sabbiroffc" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sabbiroffc" height="30" width="40" /></a>
 </p>
 <br/>
 
-## Language And Tools
+## Language And Tools 💻
+
+<div align="center">
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,react,js,express,mongodb,vscode,git,figma,firebase,)](https://skillicons.dev)
 
-## Current Status📊
+</div>
+
+## Current Status 📊
 
 <div align="center">
 
@@ -35,7 +40,7 @@
 
 </div>
 
-## Summary
+## Summary 📈
 
 <p align="center">
   <a href="https://github.com/sabbir-offc">
@@ -48,5 +53,43 @@
 <a href="https://github.com/sabbir-offc"><img alt="All  Top Languages" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=2077" height="192px" width="49.5%"/></a>
   <br/>
 </a>
+<br/>
 
-<p align="right"> <img src="https://komarev.com/ghpvc/?username=sabbir-offc&label=Profile%20views&color=0e75b6&style=flat" alt="sabbir-offc" /> </p>
+## Recent Projects: 📝
+
+1. **Health Hub** - DIAGNOSTIC MANAGEMENT
+   SYSTEM
+
+   ### Features:
+
+   - **Administrative Tasks:** Streamline administrative tasks such as adding new tests, updating test details, and managing users.
+
+   - **Appointment Management:** Schedule and manage appointments for diagnostic tests.
+
+   - **Security with JWT Token:** To protect user accounts and sensitive information, our application employs JWT (JSON Web Token) authentication
+
+   > [Live Link](https://diagnostic-center-1ba53.web.app/)
+
+2. **JOB HUNTING** - JOB SEARCHING PLATFORM
+
+   ### Features:
+
+   - **Post Job Listings** - Users can effortlessly create and post job listings on our "Job Hunting" platform.
+   - **Apply to Job Openings** - Job seekers can explore our extensive list of job openings on "Job Hunting" and apply to positions that match their skill set and interests.
+   - **Security with JWT Token** - To protect user accounts and sensitive information, our application employs JWT (JSON Web Token) authentication
+
+   > [Live Link](https://job-hunting-cf12c.web.app/)
+
+3. **Gadget Store** - AN E-COMMERCE PLATFORM
+
+   ### Features:
+
+   - **Product Listings:** Browse through a vast catalog of electronic products from well-known brands.
+   - **Product Details:** Get comprehensive information about each product, including specifications, pricing, and user reviews.
+
+   - **Theme Switching:** Enjoy the website in your preferred light or dark mode with the theme toggle feature.
+     > [Live Link](https://brand-shop-acfd4.firebaseapp.com/)
+
+   <br/>
+   <br/>
+    <p align="right"> <img src="https://komarev.com/ghpvc/?username=sabbir-offc&label=Profile%20views&color=0e75b6&style=flat" alt="sabbir-offc" /> </p>
