@@ -26,15 +26,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,react,js,express,mongodb,vscode,git,figma,firebase,)](https://skillicons.dev)
 
-<<<<<<< HEAD
-
-## Current Status 📊
-
-=======
-
 ## Current Status📊
-
-> > > > > > > 4a44097336537f52a9759907956a3b655b32861b
 
 <div align="center">
 
