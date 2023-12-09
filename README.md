@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **Next.js**
 
-- 💬 Ask me about **HTML,CSS,JS,React.**
+- 💬 Ask me about **HTML, CSS, JS, React.**
 
 - 📫 How to reach me **mdsabbirhowlader420@gmail.com**
 
@@ -27,7 +27,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,react,tailwind,figma,express,mongodb)](https://skillicons.dev)
 
-## Current Status
+## Current Status📊
 
 <div align="center">
 
