@@ -44,7 +44,7 @@
 </p>
 
 <a> 
-    <a href="https://github.com/sabbir-offc"><img alt="Sabbir Howlader" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=sabbir-offc&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+    <a href="https://github.com/sabbir-offc"><img alt="Sabbir Howlader" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabbir-offc&theme=2077" height="192px" width="49.5%"/></a>
 <a href="https://github.com/sabbir-offc"><img alt="All  Top Languages" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=2077" height="192px" width="49.5%"/></a>
   <br/>
 </a>
