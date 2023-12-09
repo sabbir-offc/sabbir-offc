@@ -28,14 +28,24 @@
 
 ## Current Status
 
+<div align="center">
+
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=sabbir-offc&theme=panda&hide_border=true&border_radius=3)](https://git.io/streak-stats)
+
+</div>
 
 ## Summary
 
+<div align="center">
+
 ![Summary](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sabbir-offc&theme=2077)
 
-<!-- <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sabbir-offc&show_icons=true&locale=en&layout=compact" alt="sabbirofc" /></p> -->
+</div>
 
-## Top Language used in my project.
+<div style="display: flex; justify-content: space-between;">
 
 ![Top Language](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=2077)
+
+![Stats](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabbir-offc&theme=2077)
+
+</div>
