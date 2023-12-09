@@ -1,6 +1,6 @@
 [![MasterHead](/Images/githubCover.png)](https://www.facebook.com/sabbir.offc)
 
-<h1 align="center">Hi 👋, I'm Md. Sabbir Howlader</h1>
+<h1 align="center">Hi 👋, I'm Md. Sabbir Howlader</h1>   
 <h3 align="center">
   <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=React+Developer;Frontend+Developer;&center=true&width=500&height=50"></a>
 </h3>
@@ -10,7 +10,7 @@
 
 - 🌱 I’m currently learning **Next.js**
 
-- 💬 Ask me about **HTML,CSS,JS,React.**
+- 💬 Ask me about **HTML, CSS, JS, React.**
 
 - 📫 How to reach me **mdsabbirhowlader420@gmail.com**
 
@@ -26,7 +26,15 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,react,js,express,mongodb,vscode,git,figma,firebase,)](https://skillicons.dev)
 
+<<<<<<< HEAD
+
 ## Current Status 📊
+
+=======
+
+## Current Status📊
+
+> > > > > > > 4a44097336537f52a9759907956a3b655b32861b
 
 <div align="center">
 
