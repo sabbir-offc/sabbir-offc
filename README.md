@@ -14,7 +14,7 @@
 
 - 📫 How to reach me **mdsabbirhowlader420@gmail.com**
 
-- ⚡ Fun fact **Using HTML you can ack NASA!**
+- ⚡ Fun fact **Using HTML you can hack NASA!**
 
 ### Connect with me: 📭
 
