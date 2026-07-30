@@ -125,18 +125,18 @@ Issue-tracker API with JWT auth, contributor/maintainer roles and filtering by t
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-light.svg">
-  <img alt="Languages by bytes of code across all 141 repositories, public and private: TypeScript 82.9%, JavaScript 10.5%, Go 2.6%" width="49%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
+  <img alt="Language breakdown by bytes of code across every repository, public and private" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-light.svg">
-  <img alt="2,453 commits all time, 141 repositories, 75% of commits in private repos, 83% TypeScript" width="49%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
+  <img alt="Headline totals: commits all time, share in private repos, repository counts, top language share" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-light.svg">
-  <img alt="Commits per year, public and private: 2023 499, 2024 191, 2025 767, 2026 996 year-to-date" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
+  <img alt="Commits per year, split public versus private, current year to date" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
 </picture>
 
 <br/><br/>

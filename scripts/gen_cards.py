@@ -187,11 +187,17 @@ viewBox="0 0 {w} {h}" role="img" aria-label="{esc(title)}">
 
 # ----------------------------------------------------------------- card bodies
 
-def card_languages(d, t, top=8):
+# All cards are the same full width. GitHub wraps <picture> in a <themed-picture>
+# custom element, so two cards at width="49%" stack instead of sitting side by side —
+# laying the columns out inside the SVG is the only way to control this reliably.
+W_CARD = 920
+
+
+def card_languages(d, t, cols=3):
     c = THEMES[t]
-    W = 452
+    W = W_CARD
     total = sum(d["lang_bytes"].values()) or 1
-    ranked = sorted(d["lang_bytes"].items(), key=lambda kv: -kv[1])[:top]
+    ranked = sorted(d["lang_bytes"].items(), key=lambda kv: -kv[1])
 
     bx, bw, by, bh = 22, W - 44, 66, 11
     segs, x = [], float(bx)
@@ -204,32 +210,31 @@ def card_languages(d, t, top=8):
         segs.append(f'<rect x="{x:.2f}" y="{by}" width="{bx + bw - x:.2f}" '
                     f'height="{bh}" fill="{c["track"]}"/>')
 
-    rows, ry, col_w = [], 100, (W - 44) / 2
+    rows, ry, col_w = [], 102, (W - 44) / cols
     for i, (name, n) in enumerate(ranked):
-        cx = 22 + (i % 2) * col_w
-        cy = ry + (i // 2) * 22
+        cx = 22 + (i % cols) * col_w
+        cy = ry + (i // cols) * 23
         pct = n / total * 100
         pct_s = f"{pct:.2f}%" if pct < 1 else f"{pct:.1f}%"
         rows.append(
             f'<circle cx="{cx + 5:.0f}" cy="{cy - 4:.0f}" r="5" '
             f'fill="{readable(d["lang_color"][name], t)}"/>'
             f'<text class="l" x="{cx + 17:.0f}" y="{cy}">{esc(name)}</text>'
-            f'<text class="m" x="{cx + col_w - 12:.0f}" y="{cy}" '
+            f'<text class="m" x="{cx + col_w - 26:.0f}" y="{cy}" '
             f'text-anchor="end">{pct_s}</text>'
         )
 
-    # matched to card_numbers so the two sit level side by side in the README
-    H = max(ry + ((len(ranked) + 1) // 2) * 22 + 14, 224)
-    mb = total / 1e6
+    H = ry + ((len(ranked) + cols - 1) // cols) * 23 + 12
     body = "\n".join(f"  {s}" for s in segs + rows)
     return W, H, frame(
         W, H, t, body, "Languages",
-        f"{mb:,.1f} MB of code across {d['repos']} repositories · public + private",
+        f"{total / 1e6:,.1f} MB of code across all {d['repos']} repositories "
+        f"· measured in bytes, not repository count",
     )
 
 
 def card_numbers(d, t):
-    W, H = 452, 224
+    W, H = W_CARD, 158
     total_b = sum(d["lang_bytes"].values()) or 1
     top_lang, top_b = max(d["lang_bytes"].items(), key=lambda kv: kv[1])
     commits = sum(y["public"] + y["private"] for y in d["years"])
@@ -237,16 +242,16 @@ def card_numbers(d, t):
 
     stats = [
         (f"{commits:,}", "COMMITS, ALL TIME"),
+        (f"{priv / commits * 100:.0f}%", "OF THEM PRIVATE"),
         (f"{d['repos']}", "REPOSITORIES"),
-        (f"{priv / commits * 100:.0f}%", "COMMITS IN PRIVATE REPOS"),
-        (f"{top_b / total_b * 100:.0f}%", f"{top_lang.upper()}"),
+        (f"{d['private_repos']}", "PRIVATE REPOS"),
+        (f"{top_b / total_b * 100:.0f}%", top_lang.upper()),
     ]
-    out, col_w = [], (W - 44) / 2
+    out, col_w = [], (W - 44) / len(stats)
     for i, (num, label) in enumerate(stats):
-        x = 22 + (i % 2) * col_w
-        y = 96 + (i // 2) * 62
-        out.append(f'<text class="n" x="{x:.0f}" y="{y}">{esc(num)}</text>'
-                   f'<text class="k" x="{x:.0f}" y="{y + 17}">{esc(label)}</text>')
+        x = 22 + i * col_w
+        out.append(f'<text class="n" x="{x:.0f}" y="112">{esc(num)}</text>'
+                   f'<text class="k" x="{x:.0f}" y="131">{esc(label)}</text>')
     body = "\n".join(f"  {s}" for s in out)
     return W, H, frame(W, H, t, body, "By the numbers",
                        f"every repository, public and private · as of {d['generated']}")
@@ -254,7 +259,7 @@ def card_numbers(d, t):
 
 def card_commits(d, t):
     c = THEMES[t]
-    W, H = 920, 216
+    W, H = W_CARD, 216
     ys = d["years"]
     peak = max((y["public"] + y["private"]) for y in ys) or 1
 
