@@ -123,25 +123,20 @@ Issue-tracker API with JWT auth, contributor/maintainer roles and filtering by t
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabbir-offc&theme=github_dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabbir-offc&theme=github">
-  <img alt="Stats" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabbir-offc&theme=github_dark">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-light.svg">
+  <img alt="Languages by bytes of code across all 141 repositories, public and private: TypeScript 82.9%, JavaScript 10.5%, Go 2.6%" width="49%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=github_dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=github">
-  <img alt="Repos per language" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabbir-offc&theme=github_dark">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-light.svg">
+  <img alt="2,453 commits all time, 141 repositories, 75% of commits in private repos, 83% TypeScript" width="49%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabbir-offc&theme=github_dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabbir-offc&theme=github">
-  <img alt="Most-committed languages" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabbir-offc&theme=github_dark">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sabbir-offc&utcOffset=6&theme=github_dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sabbir-offc&utcOffset=6&theme=github">
-  <img alt="Productive time" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sabbir-offc&utcOffset=6&theme=github_dark">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-light.svg">
+  <img alt="Commits per year, public and private: 2023 499, 2024 191, 2025 767, 2026 996 year-to-date" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
 </picture>
 
 <br/><br/>
@@ -152,26 +147,14 @@ Issue-tracker API with JWT auth, contributor/maintainer roles and filtering by t
   <img alt="Contribution activity graph" width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=sabbir-offc&bg_color=0D1117&color=E6EDF3&line=58A6FF&point=BF91F3&area=true&area_color=58A6FF&hide_border=true&custom_title=Contribution%20Activity">
 </picture>
 
-<!--
-  Self-hosted github-readme-stats. The public instance at github-readme-stats.vercel.app is
-  permanently paused (503 DEPLOYMENT_PAUSED), so these two cards run from my own Vercel deploy of
-  sabbir-offc/github-readme-stats. count_private + include_all_commits make them the only cards here
-  that read private-repo commits directly. Uncomment and replace <DEPLOY-URL> once deployed.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://<DEPLOY-URL>/api?username=sabbir-offc&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BF91F3&text_color=8B949E">
-  <source media="(prefers-color-scheme: light)" srcset="https://<DEPLOY-URL>/api?username=sabbir-offc&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=8250DF&text_color=57606A">
-  <img alt="GitHub stats" width="49%" src="https://<DEPLOY-URL>/api?username=sabbir-offc&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BF91F3&text_color=8B949E">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://<DEPLOY-URL>/api/top-langs/?username=sabbir-offc&count_private=true&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E">
-  <source media="(prefers-color-scheme: light)" srcset="https://<DEPLOY-URL>/api/top-langs/?username=sabbir-offc&count_private=true&layout=compact&langs_count=8&hide_border=true&bg_color=FFFFFF&title_color=0969DA&text_color=57606A">
-  <img alt="Top languages" width="49%" src="https://<DEPLOY-URL>/api/top-langs/?username=sabbir-offc&count_private=true&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E">
-</picture>
--->
-
-<sub>The streak and activity graph are built from the GitHub contribution calendar, so they include
-private work — which is where most of my commits live.</sub>
+<sub><b>On these numbers.</b> Most public card services can only read public repositories, which for this
+account means old JavaScript coursework outvotes the work I actually do — so the language and commit
+cards above are generated from an authenticated token instead
+(<a href="scripts/gen_cards.py"><code>scripts/gen_cards.py</code></a>, refreshed weekly) and cover all
+141 repositories, private included. Language share is measured in bytes of code rather than repository
+count, because counting repositories lets dozens of tiny 2023 projects outweigh everything since. The
+streak and activity graph come from the GitHub contribution calendar, which already includes private
+work.</sub>
 
 </div>
 
