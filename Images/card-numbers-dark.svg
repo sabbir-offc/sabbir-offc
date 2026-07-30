@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="452" height="224" viewBox="0 0 452 224" role="img" aria-label="By the numbers">
+  <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Liberation Sans',sans-serif; }
+    .t { font-size: 15px; font-weight: 600; fill: #58A6FF; }
+    .s { font-size: 10.5px; fill: #6E7681; }
+    .l { font-size: 11.5px; fill: #E6EDF3; }
+    .m { font-size: 11px; fill: #8B949E; }
+    .n { font-size: 27px; font-weight: 700; fill: #E6EDF3; }
+    .k { font-size: 10px; fill: #6E7681; letter-spacing: .04em; }
+  </style>
+  <rect x="0.5" y="0.5" width="451" height="223" rx="6"
+        fill="#0D1117" stroke="#30363D"/>
+  <text class="t" x="22" y="30">By the numbers</text>
+  <text class="s" x="22" y="48">every repository, public and private · as of 2026-07-30</text>
+  <text class="n" x="22" y="96">2,453</text><text class="k" x="22" y="113">COMMITS, ALL TIME</text>
+  <text class="n" x="226" y="96">141</text><text class="k" x="226" y="113">REPOSITORIES</text>
+  <text class="n" x="22" y="158">75%</text><text class="k" x="22" y="175">COMMITS IN PRIVATE REPOS</text>
+  <text class="n" x="226" y="158">83%</text><text class="k" x="226" y="175">TYPESCRIPT</text>
+</svg>
