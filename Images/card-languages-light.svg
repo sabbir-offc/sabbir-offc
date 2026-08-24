@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="206" viewBox="0 0 920 206" role="img" aria-label="Languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="229" viewBox="0 0 920 229" role="img" aria-label="Languages">
   <style>
     text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Liberation Sans',sans-serif; }
     .t { font-size: 15px; font-weight: 600; fill: #0969DA; }
@@ -8,32 +8,34 @@
     .n { font-size: 27px; font-weight: 700; fill: #1F2328; }
     .k { font-size: 10px; fill: #6E7781; letter-spacing: .04em; }
   </style>
-  <rect x="0.5" y="0.5" width="919" height="205" rx="6"
+  <rect x="0.5" y="0.5" width="919" height="228" rx="6"
         fill="#FFFFFF" stroke="#D0D7DE"/>
   <text class="t" x="22" y="30">Languages</text>
-  <text class="s" x="22" y="48">23.9 MB of code across all 150 repositories · measured in bytes, not repository count</text>
-  <rect x="22.00" y="66" width="725.70" height="11" fill="#3178c6"/>
-  <rect x="747.70" y="66" width="80.36" height="11" fill="#f1e05a"/>
-  <rect x="828.05" y="66" width="25.22" height="11" fill="#00ADD8"/>
-  <rect x="853.27" y="66" width="15.03" height="11" fill="#663399"/>
-  <rect x="868.29" y="66" width="14.29" height="11" fill="#e34c26"/>
-  <rect x="882.58" y="66" width="5.56" height="11" fill="#f34b7d"/>
-  <rect x="888.14" y="66" width="4.91" height="11" fill="#89e051"/>
-  <rect x="893.06" y="66" width="2.23" height="11" fill="#3572A5"/>
-  <rect x="895.29" y="66" width="1.77" height="11" fill="#012456"/>
-  <rect x="897.06" y="66" width="0.92" height="11" fill="#384d54"/>
+  <text class="s" x="22" y="48">24.4 MB of code across all 150 repositories · measured in bytes, not repository count</text>
+  <rect x="22.00" y="66" width="727.16" height="11" fill="#3178c6"/>
+  <rect x="749.16" y="66" width="78.71" height="11" fill="#f1e05a"/>
+  <rect x="827.87" y="66" width="25.84" height="11" fill="#00ADD8"/>
+  <rect x="853.71" y="66" width="14.73" height="11" fill="#663399"/>
+  <rect x="868.44" y="66" width="13.98" height="11" fill="#e34c26"/>
+  <rect x="882.42" y="66" width="5.44" height="11" fill="#f34b7d"/>
+  <rect x="887.86" y="66" width="4.81" height="11" fill="#89e051"/>
+  <rect x="892.67" y="66" width="2.18" height="11" fill="#3572A5"/>
+  <rect x="894.85" y="66" width="1.73" height="11" fill="#012456"/>
+  <rect x="896.59" y="66" width="0.90" height="11" fill="#384d54"/>
+  <rect x="897.48" y="66" width="0.60" height="11" fill="#A97BFF"/>
   <rect x="897.97" y="66" width="0.60" height="11" fill="#701516"/>
   <rect x="897.99" y="66" width="0.60" height="11" fill="#F05138"/>
-  <circle cx="27" cy="98" r="5" fill="#3178c6"/><text class="l" x="39" y="102">TypeScript</text><text class="m" x="288" y="102" text-anchor="end">82.8%</text>
-  <circle cx="319" cy="98" r="5" fill="#f1e05a"/><text class="l" x="331" y="102">JavaScript</text><text class="m" x="580" y="102" text-anchor="end">9.2%</text>
+  <circle cx="27" cy="98" r="5" fill="#3178c6"/><text class="l" x="39" y="102">TypeScript</text><text class="m" x="288" y="102" text-anchor="end">83.0%</text>
+  <circle cx="319" cy="98" r="5" fill="#f1e05a"/><text class="l" x="331" y="102">JavaScript</text><text class="m" x="580" y="102" text-anchor="end">9.0%</text>
   <circle cx="611" cy="98" r="5" fill="#00ADD8"/><text class="l" x="623" y="102">Go</text><text class="m" x="872" y="102" text-anchor="end">2.9%</text>
   <circle cx="27" cy="121" r="5" fill="#663399"/><text class="l" x="39" y="125">CSS</text><text class="m" x="288" y="125" text-anchor="end">1.7%</text>
   <circle cx="319" cy="121" r="5" fill="#e34c26"/><text class="l" x="331" y="125">HTML</text><text class="m" x="580" y="125" text-anchor="end">1.6%</text>
-  <circle cx="611" cy="121" r="5" fill="#f34b7d"/><text class="l" x="623" y="125">C++</text><text class="m" x="872" y="125" text-anchor="end">0.64%</text>
-  <circle cx="27" cy="144" r="5" fill="#89e051"/><text class="l" x="39" y="148">Shell</text><text class="m" x="288" y="148" text-anchor="end">0.56%</text>
+  <circle cx="611" cy="121" r="5" fill="#f34b7d"/><text class="l" x="623" y="125">C++</text><text class="m" x="872" y="125" text-anchor="end">0.62%</text>
+  <circle cx="27" cy="144" r="5" fill="#89e051"/><text class="l" x="39" y="148">Shell</text><text class="m" x="288" y="148" text-anchor="end">0.55%</text>
   <circle cx="319" cy="144" r="5" fill="#3572A5"/><text class="l" x="331" y="148">Python</text><text class="m" x="580" y="148" text-anchor="end">0.25%</text>
   <circle cx="611" cy="144" r="5" fill="#012456"/><text class="l" x="623" y="148">PowerShell</text><text class="m" x="872" y="148" text-anchor="end">0.20%</text>
   <circle cx="27" cy="167" r="5" fill="#384d54"/><text class="l" x="39" y="171">Dockerfile</text><text class="m" x="288" y="171" text-anchor="end">0.10%</text>
-  <circle cx="319" cy="167" r="5" fill="#701516"/><text class="l" x="331" y="171">Ruby</text><text class="m" x="580" y="171" text-anchor="end">0.00%</text>
-  <circle cx="611" cy="167" r="5" fill="#F05138"/><text class="l" x="623" y="171">Swift</text><text class="m" x="872" y="171" text-anchor="end">0.00%</text>
+  <circle cx="319" cy="167" r="5" fill="#A97BFF"/><text class="l" x="331" y="171">Kotlin</text><text class="m" x="580" y="171" text-anchor="end">0.06%</text>
+  <circle cx="611" cy="167" r="5" fill="#701516"/><text class="l" x="623" y="171">Ruby</text><text class="m" x="872" y="171" text-anchor="end">0.00%</text>
+  <circle cx="27" cy="190" r="5" fill="#F05138"/><text class="l" x="39" y="194">Swift</text><text class="m" x="288" y="194" text-anchor="end">0.00%</text>
 </svg>
