@@ -11,10 +11,10 @@
   <rect x="0.5" y="0.5" width="919" height="157" rx="6"
         fill="#0D1117" stroke="#30363D"/>
   <text class="t" x="22" y="30">By the numbers</text>
-  <text class="s" x="22" y="48">every repository, public and private · as of 2026-08-24</text>
-  <text class="n" x="22" y="112">3,033</text><text class="k" x="22" y="131">COMMITS, ALL TIME</text>
-  <text class="n" x="197" y="112">80%</text><text class="k" x="197" y="131">OF THEM PRIVATE</text>
-  <text class="n" x="372" y="112">150</text><text class="k" x="372" y="131">REPOSITORIES</text>
-  <text class="n" x="548" y="112">66</text><text class="k" x="548" y="131">PRIVATE REPOS</text>
-  <text class="n" x="723" y="112">83%</text><text class="k" x="723" y="131">TYPESCRIPT</text>
+  <text class="s" x="22" y="48">every repository, public and private · as of 2026-08-31</text>
+  <text class="n" x="22" y="112">3,290</text><text class="k" x="22" y="131">COMMITS, ALL TIME</text>
+  <text class="n" x="197" y="112">81%</text><text class="k" x="197" y="131">OF THEM PRIVATE</text>
+  <text class="n" x="372" y="112">151</text><text class="k" x="372" y="131">REPOSITORIES</text>
+  <text class="n" x="548" y="112">67</text><text class="k" x="548" y="131">PRIVATE REPOS</text>
+  <text class="n" x="723" y="112">84%</text><text class="k" x="723" y="131">TYPESCRIPT</text>
 </svg>
