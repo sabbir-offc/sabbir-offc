@@ -90,17 +90,20 @@ an issue-tracker API with JWT auth and role-based filtering ([API →](https://d
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-mobile-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-mobile-light.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-light.svg">
   <img alt="Language breakdown by bytes of code across every repository, public and private" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-languages-dark.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-mobile-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-mobile-light.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-light.svg">
   <img alt="Headline totals: commits all time, share in private repos, repository counts, top language share" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-numbers-dark.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-mobile-dark.svg">
+  <source media="(max-width: 500px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-mobile-light.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-light.svg">
   <img alt="Commits per year, split public versus private, current year to date" width="98%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/card-commits-dark.svg">
 </picture>
