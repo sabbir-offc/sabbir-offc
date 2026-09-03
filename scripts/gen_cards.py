@@ -11,8 +11,14 @@ Two metrics are deliberately chosen:
     still wins purely because the 2023-era repos were numerous and tiny.
   * commit counts include restrictedContributionsCount, i.e. private-repo commits.
 
+Each card is drawn twice per theme. A README image is sized with width="98%", so the
+rendered text size is (font-size x container/viewBox): GitHub's markdown column is
+~830px on a desktop but ~293px on a 375px phone, and one 920-wide card served to both
+puts the labels at 3-4px on the phone. The mobile variants use a 400-wide canvas with
+reflowed columns, and README.md picks between them with a `(max-width: 500px)` source.
+
 Needs GH_TOKEN with `repo` scope. Stdlib only, so CI needs no pip install.
-Writes Images/card-{languages,numbers,commits}-{dark,light}.svg
+Writes Images/card-{languages,numbers,commits}[-mobile]-{dark,light}.svg
 """
 import json
 import os
@@ -163,23 +169,38 @@ def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
-def frame(w, h, t, body, title, subtitle):
+# Type scales. A README image is laid out with width="98%", so the rendered text size
+# is (font-size x container/viewBox) — the viewBox width sets the scale, not the font.
+# GitHub's markdown column is ~830px on a desktop but only ~293px on a 375px phone, so
+# one 920-wide card cannot serve both: at 0.32x the desktop labels land at 3-4px. The
+# mobile variants below are drawn on a 400-wide canvas instead, which renders at ~0.73x
+# and puts the same labels back above 10px.
+SCALES = {
+    "desktop": dict(pad=22, t=15, s=10.5, ll=11.5, m=11, n=27, k=10,
+                    title_y=30, sub_y=48),
+    "mobile": dict(pad=18, t=19, s=13, ll=15, m=14, n=30, k=13,
+                   title_y=28, sub_y=50),
+}
+
+
+def frame(w, h, t, body, title, subtitle, scale="desktop"):
     c = THEMES[t]
+    z = SCALES[scale]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" \
 viewBox="0 0 {w} {h}" role="img" aria-label="{esc(title)}">
   <style>
     text {{ font-family: {FONT}; }}
-    .t {{ font-size: 15px; font-weight: 600; fill: {c['title']}; }}
-    .s {{ font-size: 10.5px; fill: {c['dim']}; }}
-    .l {{ font-size: 11.5px; fill: {c['text']}; }}
-    .m {{ font-size: 11px; fill: {c['muted']}; }}
-    .n {{ font-size: 27px; font-weight: 700; fill: {c['text']}; }}
-    .k {{ font-size: 10px; fill: {c['dim']}; letter-spacing: .04em; }}
+    .t {{ font-size: {z['t']}px; font-weight: 600; fill: {c['title']}; }}
+    .s {{ font-size: {z['s']}px; fill: {c['dim']}; }}
+    .l {{ font-size: {z['ll']}px; fill: {c['text']}; }}
+    .m {{ font-size: {z['m']}px; fill: {c['muted']}; }}
+    .n {{ font-size: {z['n']}px; font-weight: 700; fill: {c['text']}; }}
+    .k {{ font-size: {z['k']}px; fill: {c['dim']}; letter-spacing: .04em; }}
   </style>
   <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="6"
         fill="{c['bg']}" stroke="{c['border']}"/>
-  <text class="t" x="22" y="30">{esc(title)}</text>
-  <text class="s" x="22" y="48">{esc(subtitle)}</text>
+  <text class="t" x="{z['pad']}" y="{z['title_y']}">{esc(title)}</text>
+  <text class="s" x="{z['pad']}" y="{z['sub_y']}">{esc(subtitle)}</text>
 {body}
 </svg>
 """
@@ -191,50 +212,69 @@ viewBox="0 0 {w} {h}" role="img" aria-label="{esc(title)}">
 # custom element, so two cards at width="49%" stack instead of sitting side by side —
 # laying the columns out inside the SVG is the only way to control this reliably.
 W_CARD = 920
+W_MOBILE = 400
 
 
-def card_languages(d, t, cols=3):
+def card_languages(d, t, scale="desktop"):
     c = THEMES[t]
-    W = W_CARD
+    mob = scale == "mobile"
+    z = SCALES[scale]
+    W = W_MOBILE if mob else W_CARD
+    pad = z["pad"]
+    # One column on a phone: three columns of 130px cannot hold "JavaScript  10.5%".
+    cols = 1 if mob else 3
+    bar_y, bar_h = (72, 13) if mob else (66, 11)
+    ry, step, dot = (114, 27, 6) if mob else (102, 23, 5)
+
     total = sum(d["lang_bytes"].values()) or 1
     ranked = sorted(d["lang_bytes"].items(), key=lambda kv: -kv[1])
 
-    bx, bw, by, bh = 22, W - 44, 66, 11
+    bx, bw = pad, W - pad * 2
     segs, x = [], float(bx)
     for name, n in ranked:
         seg = bw * n / total
-        segs.append(f'<rect x="{x:.2f}" y="{by}" width="{max(seg, 0.6):.2f}" '
-                    f'height="{bh}" fill="{readable(d["lang_color"][name], t)}"/>')
+        segs.append(f'<rect x="{x:.2f}" y="{bar_y}" width="{max(seg, 0.6):.2f}" '
+                    f'height="{bar_h}" fill="{readable(d["lang_color"][name], t)}"/>')
         x += seg
     if x < bx + bw - 0.5:
-        segs.append(f'<rect x="{x:.2f}" y="{by}" width="{bx + bw - x:.2f}" '
-                    f'height="{bh}" fill="{c["track"]}"/>')
+        segs.append(f'<rect x="{x:.2f}" y="{bar_y}" width="{bx + bw - x:.2f}" '
+                    f'height="{bar_h}" fill="{c["track"]}"/>')
 
-    rows, ry, col_w = [], 102, (W - 44) / cols
-    for i, (name, n) in enumerate(ranked):
-        cx = 22 + (i % cols) * col_w
-        cy = ry + (i // cols) * 23
+    # The bar always shows every language. The list does too on desktop, but a phone
+    # column spends a whole 27px row on "Swift 0.00%" — below 0.1% they become a count.
+    listed = [kv for kv in ranked if kv[1] / total * 100 >= 0.1] if mob else ranked
+    hidden = len(ranked) - len(listed)
+
+    rows, col_w = [], (W - pad * 2) / cols
+    for i, (name, n) in enumerate(listed):
+        cx = pad + (i % cols) * col_w
+        cy = ry + (i // cols) * step
         pct = n / total * 100
         pct_s = f"{pct:.2f}%" if pct < 1 else f"{pct:.1f}%"
         rows.append(
-            f'<circle cx="{cx + 5:.0f}" cy="{cy - 4:.0f}" r="5" '
+            f'<circle cx="{cx + dot:.0f}" cy="{cy - 4:.0f}" r="{dot}" '
             f'fill="{readable(d["lang_color"][name], t)}"/>'
-            f'<text class="l" x="{cx + 17:.0f}" y="{cy}">{esc(name)}</text>'
-            f'<text class="m" x="{cx + col_w - 26:.0f}" y="{cy}" '
+            f'<text class="l" x="{cx + dot * 2 + 8:.0f}" y="{cy}">{esc(name)}</text>'
+            f'<text class="m" x="{cx + col_w - (2 if mob else 26):.0f}" y="{cy}" '
             f'text-anchor="end">{pct_s}</text>'
         )
 
-    H = ry + ((len(ranked) + cols - 1) // cols) * 23 + 12
+    H = ry + ((len(listed) + cols - 1) // cols) * step + (10 if mob else 12)
+    if hidden:
+        rows.append(f'<text class="k" x="{pad}" y="{H + 4}">'
+                    f'+{hidden} MORE UNDER 0.1%</text>')
+        H += 20
     body = "\n".join(f"  {s}" for s in segs + rows)
-    return W, H, frame(
-        W, H, t, body, "Languages",
-        f"{total / 1e6:,.1f} MB of code across all {d['repos']} repositories "
-        f"· measured in bytes, not repository count",
-    )
+    sub = (f"{total / 1e6:,.1f} MB across {d['repos']} repos · by bytes" if mob else
+           f"{total / 1e6:,.1f} MB of code across all {d['repos']} repositories "
+           f"· measured in bytes, not repository count")
+    return W, H, frame(W, H, t, body, "Languages", sub, scale)
 
 
-def card_numbers(d, t):
-    W, H = W_CARD, 158
+def card_numbers(d, t, scale="desktop"):
+    mob = scale == "mobile"
+    z = SCALES[scale]
+    pad = z["pad"]
     total_b = sum(d["lang_bytes"].values()) or 1
     top_lang, top_b = max(d["lang_bytes"].items(), key=lambda kv: kv[1])
     commits = sum(y["public"] + y["private"] for y in d["years"])
@@ -247,27 +287,44 @@ def card_numbers(d, t):
         (f"{d['private_repos']}", "PRIVATE REPOS"),
         (f"{top_b / total_b * 100:.0f}%", top_lang.upper()),
     ]
-    out, col_w = [], (W - 44) / len(stats)
-    for i, (num, label) in enumerate(stats):
-        x = 22 + i * col_w
-        out.append(f'<text class="n" x="{x:.0f}" y="112">{esc(num)}</text>'
-                   f'<text class="k" x="{x:.0f}" y="131">{esc(label)}</text>')
+
+    out = []
+    if mob:
+        # Five figures across a 400px canvas would leave 73px per column; 2x3 instead.
+        W, cols, row_h, y0 = W_MOBILE, 2, 60, 104
+        col_w = (W - pad * 2) / cols
+        for i, (num, label) in enumerate(stats):
+            x = pad + (i % cols) * col_w
+            y = y0 + (i // cols) * row_h
+            out.append(f'<text class="n" x="{x:.0f}" y="{y}">{esc(num)}</text>'
+                       f'<text class="k" x="{x:.0f}" y="{y + 20}">{esc(label)}</text>')
+        H = y0 + ((len(stats) + cols - 1) // cols - 1) * row_h + 38
+    else:
+        W, H = W_CARD, 158
+        col_w = (W - pad * 2) / len(stats)
+        for i, (num, label) in enumerate(stats):
+            x = pad + i * col_w
+            out.append(f'<text class="n" x="{x:.0f}" y="112">{esc(num)}</text>'
+                       f'<text class="k" x="{x:.0f}" y="131">{esc(label)}</text>')
+
     body = "\n".join(f"  {s}" for s in out)
-    return W, H, frame(W, H, t, body, "By the numbers",
-                       f"every repository, public and private · as of {d['generated']}")
+    sub = (f"public and private · {d['generated']}" if mob else
+           f"every repository, public and private · as of {d['generated']}")
+    return W, H, frame(W, H, t, body, "By the numbers", sub, scale)
 
 
-def card_commits(d, t):
+def card_commits(d, t, scale="desktop"):
     c = THEMES[t]
-    W, H = W_CARD, 216
+    mob = scale == "mobile"
+    W, H = (W_MOBILE, 248) if mob else (W_CARD, 216)
     ys = d["years"]
     peak = max((y["public"] + y["private"]) for y in ys) or 1
 
-    top, floor = 78, 168
+    top, floor = (92, 196) if mob else (78, 168)
     span = floor - top
-    left, right = 40, W - 40
+    left, right = (30, W - 30) if mob else (40, W - 40)
     slot = (right - left) / len(ys)
-    bw = min(96, slot * 0.5)
+    bw = min(46 if mob else 96, slot * 0.5)
 
     out = [f'<line x1="{left}" y1="{floor}.5" x2="{right}" y2="{floor}.5" '
            f'stroke="{c["border"]}"/>']
@@ -284,22 +341,22 @@ def card_commits(d, t):
                    f'height="{max(h - hp, 0):.1f}" fill="{c["accent"]}"/>')
         out.append(f'<text class="l" x="{cx:.1f}" y="{floor - h - 9:.1f}" '
                    f'text-anchor="middle">{tot:,}</text>')
-        out.append(f'<text class="k" x="{cx:.1f}" y="{floor + 18}" '
+        out.append(f'<text class="k" x="{cx:.1f}" y="{floor + (22 if mob else 18)}" '
                    f'text-anchor="middle">{y["year"]}</text>')
 
-    ly = H - 14
-    out.append(f'<rect x="{left}" y="{ly - 8}" width="9" height="9" '
+    ly = H - (16 if mob else 14)
+    sw, gap = (11, 96) if mob else (9, 74)
+    out.append(f'<rect x="{left}" y="{ly - sw + 1}" width="{sw}" height="{sw}" '
                f'fill="{c["title"]}"/>'
-               f'<text class="m" x="{left + 15}" y="{ly}">private</text>'
-               f'<rect x="{left + 74}" y="{ly - 8}" width="9" height="9" '
+               f'<text class="m" x="{left + sw + 6}" y="{ly}">private</text>'
+               f'<rect x="{left + gap}" y="{ly - sw + 1}" width="{sw}" height="{sw}" '
                f'fill="{c["accent"]}"/>'
-               f'<text class="m" x="{left + 89}" y="{ly}">public</text>')
+               f'<text class="m" x="{left + gap + sw + 6}" y="{ly}">public</text>')
 
     body = "\n".join(f"  {s}" for s in out)
-    return W, H, frame(
-        W, H, t, body, "Commits per year",
-        f"public + private · {ys[-1]['year']} is year-to-date",
-    )
+    sub = (f"public + private · {ys[-1]['year']} to date" if mob else
+           f"public + private · {ys[-1]['year']} is year-to-date")
+    return W, H, frame(W, H, t, body, "Commits per year", sub, scale)
 
 
 # ------------------------------------------------------------------------ main
@@ -310,11 +367,13 @@ def main():
     for name, fn in (("languages", card_languages), ("numbers", card_numbers),
                      ("commits", card_commits)):
         for theme in ("dark", "light"):
-            _, _, svg = fn(d, theme)
-            path = os.path.join(OUT, f"card-{name}-{theme}.svg")
-            with open(path, "w", encoding="utf-8", newline="\n") as f:
-                f.write(svg)
-            print("wrote", path)
+            for scale in ("desktop", "mobile"):
+                _, _, svg = fn(d, theme, scale)
+                suffix = f"-{theme}" if scale == "desktop" else f"-mobile-{theme}"
+                path = os.path.join(OUT, f"card-{name}{suffix}.svg")
+                with open(path, "w", encoding="utf-8", newline="\n") as f:
+                    f.write(svg)
+                print("wrote", path)
 
     total = sum(d["lang_bytes"].values())
     top = sorted(d["lang_bytes"].items(), key=lambda kv: -kv[1])[:4]
