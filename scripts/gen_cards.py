@@ -316,7 +316,9 @@ def card_numbers(d, t, scale="desktop"):
 def card_commits(d, t, scale="desktop"):
     c = THEMES[t]
     mob = scale == "mobile"
-    W, H = (W_MOBILE, 248) if mob else (W_CARD, 216)
+    # Mobile is taller than the bars need: the legend must clear the year labels by
+    # more than a line, or "2023" and "private" stack into one reading.
+    W, H = (W_MOBILE, 266) if mob else (W_CARD, 216)
     ys = d["years"]
     peak = max((y["public"] + y["private"]) for y in ys) or 1
 
