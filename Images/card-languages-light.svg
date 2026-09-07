@@ -11,32 +11,32 @@
   <rect x="0.5" y="0.5" width="919" height="228" rx="6"
         fill="#FFFFFF" stroke="#D0D7DE"/>
   <text class="t" x="22" y="30">Languages</text>
-  <text class="s" x="22" y="48">26.6 MB of code across all 151 repositories · measured in bytes, not repository count</text>
-  <rect x="22.00" y="66" width="734.63" height="11" fill="#3178c6"/>
-  <rect x="756.63" y="66" width="72.91" height="11" fill="#f1e05a"/>
-  <rect x="829.54" y="66" width="25.90" height="11" fill="#00ADD8"/>
-  <rect x="855.43" y="66" width="13.68" height="11" fill="#663399"/>
-  <rect x="869.11" y="66" width="12.82" height="11" fill="#e34c26"/>
-  <rect x="881.94" y="66" width="4.99" height="11" fill="#f34b7d"/>
-  <rect x="886.93" y="66" width="4.62" height="11" fill="#89e051"/>
-  <rect x="891.55" y="66" width="2.11" height="11" fill="#3572A5"/>
-  <rect x="893.67" y="66" width="1.59" height="11" fill="#012456"/>
-  <rect x="895.26" y="66" width="1.41" height="11" fill="#A97BFF"/>
-  <rect x="896.67" y="66" width="0.82" height="11" fill="#384d54"/>
-  <rect x="897.49" y="66" width="0.60" height="11" fill="#336790"/>
+  <text class="s" x="22" y="48">30.9 MB of code across all 152 repositories · measured in bytes, not repository count</text>
+  <rect x="22.00" y="66" width="750.53" height="11" fill="#3178c6"/>
+  <rect x="772.53" y="66" width="63.73" height="11" fill="#f1e05a"/>
+  <rect x="836.25" y="66" width="22.83" height="11" fill="#00ADD8"/>
+  <rect x="859.08" y="66" width="14.06" height="11" fill="#663399"/>
+  <rect x="873.14" y="66" width="11.03" height="11" fill="#e34c26"/>
+  <rect x="884.17" y="66" width="4.30" height="11" fill="#f34b7d"/>
+  <rect x="888.47" y="66" width="3.98" height="11" fill="#89e051"/>
+  <rect x="892.45" y="66" width="1.82" height="11" fill="#3572A5"/>
+  <rect x="894.27" y="66" width="1.37" height="11" fill="#012456"/>
+  <rect x="895.64" y="66" width="1.22" height="11" fill="#A97BFF"/>
+  <rect x="896.86" y="66" width="0.71" height="11" fill="#384d54"/>
+  <rect x="897.57" y="66" width="0.60" height="11" fill="#336790"/>
   <rect x="897.98" y="66" width="0.60" height="11" fill="#701516"/>
   <rect x="898.00" y="66" width="0.60" height="11" fill="#F05138"/>
-  <circle cx="27" cy="98" r="5" fill="#3178c6"/><text class="l" x="40" y="102">TypeScript</text><text class="m" x="288" y="102" text-anchor="end">83.9%</text>
-  <circle cx="319" cy="98" r="5" fill="#f1e05a"/><text class="l" x="332" y="102">JavaScript</text><text class="m" x="580" y="102" text-anchor="end">8.3%</text>
-  <circle cx="611" cy="98" r="5" fill="#00ADD8"/><text class="l" x="624" y="102">Go</text><text class="m" x="872" y="102" text-anchor="end">3.0%</text>
+  <circle cx="27" cy="98" r="5" fill="#3178c6"/><text class="l" x="40" y="102">TypeScript</text><text class="m" x="288" y="102" text-anchor="end">85.7%</text>
+  <circle cx="319" cy="98" r="5" fill="#f1e05a"/><text class="l" x="332" y="102">JavaScript</text><text class="m" x="580" y="102" text-anchor="end">7.3%</text>
+  <circle cx="611" cy="98" r="5" fill="#00ADD8"/><text class="l" x="624" y="102">Go</text><text class="m" x="872" y="102" text-anchor="end">2.6%</text>
   <circle cx="27" cy="121" r="5" fill="#663399"/><text class="l" x="40" y="125">CSS</text><text class="m" x="288" y="125" text-anchor="end">1.6%</text>
-  <circle cx="319" cy="121" r="5" fill="#e34c26"/><text class="l" x="332" y="125">HTML</text><text class="m" x="580" y="125" text-anchor="end">1.5%</text>
-  <circle cx="611" cy="121" r="5" fill="#f34b7d"/><text class="l" x="624" y="125">C++</text><text class="m" x="872" y="125" text-anchor="end">0.57%</text>
-  <circle cx="27" cy="144" r="5" fill="#89e051"/><text class="l" x="40" y="148">Shell</text><text class="m" x="288" y="148" text-anchor="end">0.53%</text>
-  <circle cx="319" cy="144" r="5" fill="#3572A5"/><text class="l" x="332" y="148">Python</text><text class="m" x="580" y="148" text-anchor="end">0.24%</text>
-  <circle cx="611" cy="144" r="5" fill="#012456"/><text class="l" x="624" y="148">PowerShell</text><text class="m" x="872" y="148" text-anchor="end">0.18%</text>
-  <circle cx="27" cy="167" r="5" fill="#A97BFF"/><text class="l" x="40" y="171">Kotlin</text><text class="m" x="288" y="171" text-anchor="end">0.16%</text>
-  <circle cx="319" cy="167" r="5" fill="#384d54"/><text class="l" x="332" y="171">Dockerfile</text><text class="m" x="580" y="171" text-anchor="end">0.09%</text>
+  <circle cx="319" cy="121" r="5" fill="#e34c26"/><text class="l" x="332" y="125">HTML</text><text class="m" x="580" y="125" text-anchor="end">1.3%</text>
+  <circle cx="611" cy="121" r="5" fill="#f34b7d"/><text class="l" x="624" y="125">C++</text><text class="m" x="872" y="125" text-anchor="end">0.49%</text>
+  <circle cx="27" cy="144" r="5" fill="#89e051"/><text class="l" x="40" y="148">Shell</text><text class="m" x="288" y="148" text-anchor="end">0.45%</text>
+  <circle cx="319" cy="144" r="5" fill="#3572A5"/><text class="l" x="332" y="148">Python</text><text class="m" x="580" y="148" text-anchor="end">0.21%</text>
+  <circle cx="611" cy="144" r="5" fill="#012456"/><text class="l" x="624" y="148">PowerShell</text><text class="m" x="872" y="148" text-anchor="end">0.16%</text>
+  <circle cx="27" cy="167" r="5" fill="#A97BFF"/><text class="l" x="40" y="171">Kotlin</text><text class="m" x="288" y="171" text-anchor="end">0.14%</text>
+  <circle cx="319" cy="167" r="5" fill="#384d54"/><text class="l" x="332" y="171">Dockerfile</text><text class="m" x="580" y="171" text-anchor="end">0.08%</text>
   <circle cx="611" cy="167" r="5" fill="#336790"/><text class="l" x="624" y="171">PLpgSQL</text><text class="m" x="872" y="171" text-anchor="end">0.05%</text>
   <circle cx="27" cy="190" r="5" fill="#701516"/><text class="l" x="40" y="194">Ruby</text><text class="m" x="288" y="194" text-anchor="end">0.00%</text>
   <circle cx="319" cy="190" r="5" fill="#F05138"/><text class="l" x="332" y="194">Swift</text><text class="m" x="580" y="194" text-anchor="end">0.00%</text>
