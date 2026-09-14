@@ -1,6 +1,13 @@
 <div align="center">
 
-[![Md. Sabbir Howlader — Full-Stack Engineer](/Images/banner.png)](https://realsabbir.dev)
+<a href="https://realsabbir.dev">
+  <picture>
+    <source media="(max-width: 500px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/banner-mobile-dark.svg">
+    <source media="(max-width: 500px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/banner-mobile-light.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/banner-light.svg">
+    <img alt="Md. Sabbir Howlader — Full-Stack Engineer" width="100%" src="https://raw.githubusercontent.com/sabbir-offc/sabbir-offc/main/Images/banner-dark.svg">
+  </picture>
+</a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&height=42&lines=Identity+%26+device+trust;Immutable+Linux+workstations;Hand-written+Go+WebSocket+servers;Multi-tenant+SaaS+platforms">
