@@ -11,10 +11,10 @@
   <rect x="0.5" y="0.5" width="399" height="261" rx="6"
         fill="#0D1117" stroke="#30363D"/>
   <text class="t" x="18" y="28">By the numbers</text>
-  <text class="s" x="18" y="50">public and private · 2026-09-07</text>
-  <text class="n" x="18" y="104">3,453</text><text class="k" x="18" y="124">COMMITS, ALL TIME</text>
+  <text class="s" x="18" y="50">public and private · 2026-09-14</text>
+  <text class="n" x="18" y="104">3,534</text><text class="k" x="18" y="124">COMMITS, ALL TIME</text>
   <text class="n" x="200" y="104">82%</text><text class="k" x="200" y="124">OF THEM PRIVATE</text>
-  <text class="n" x="18" y="164">152</text><text class="k" x="18" y="184">REPOSITORIES</text>
+  <text class="n" x="18" y="164">154</text><text class="k" x="18" y="184">REPOSITORIES</text>
   <text class="n" x="200" y="164">68</text><text class="k" x="200" y="184">PRIVATE REPOS</text>
   <text class="n" x="18" y="224">86%</text><text class="k" x="18" y="244">TYPESCRIPT</text>
 </svg>
