@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Md. Sabbir Howlader — Full-Stack Engineer">
+  <defs>
+    <linearGradient id="bgdl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F0F3F7"/>
+    </linearGradient>
+    <linearGradient id="accdl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0969DA"/>
+      <stop offset="1" stop-color="#8250DF"/>
+    </linearGradient>
+    <linearGradient id="ruledl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0969DA"/>
+      <stop offset="1" stop-color="#8250DF"/>
+    </linearGradient>
+    <radialGradient id="g1dl">
+      <stop offset="0" stop-color="#54AEFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#54AEFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2dl">
+      <stop offset="0" stop-color="#C297FF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#C297FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotsdl" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#1F2328" fill-opacity="0.055"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="420" fill="url(#bgdl)"/>
+  <rect x="742" y="0" width="538" height="420" fill="url(#dotsdl)"/>
+  <circle cx="1050" cy="95" r="300" fill="url(#g1dl)"/>
+  <circle cx="1170" cy="380" r="260" fill="url(#g2dl)"/>
+  <rect x="0" y="0" width="8" height="420" fill="url(#accdl)"/>
+  <text x="80" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Liberation Sans',sans-serif" font-size="17" font-weight="600" letter-spacing="0.19em" fill="#0969DA">FULL-STACK ENGINEER</text>
+  <text x="80" y="196" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Liberation Sans',sans-serif" font-size="62" font-weight="700" letter-spacing="-0.015em" fill="#1F2328">Md. Sabbir Howlader</text>
+  <rect x="80" y="224" width="104" height="4" rx="2" fill="url(#ruledl)"/>
+  <text x="80" y="278" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Liberation Sans',sans-serif" font-size="22" fill="#57606A">Building multi-tenant platforms at NeXbit LTD</text>
+  <text x="80" y="325" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="16" fill="#6E7781" letter-spacing="0.02em">TypeScript  ·  Next.js  ·  Go  ·  Postgres  ·  Electron  ·  Linux</text>
+</svg>
