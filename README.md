@@ -34,6 +34,24 @@ keep going past the browser into desktop clients, device identity and the operat
 
 </div>
 
+## Open Source
+
+### CrxTrace
+Error tracking that understands Manifest V3. Events survive service-worker death, content-script
+errors group by host, and `track()` names the task that died — the failure modes MV3 introduced and
+general-purpose trackers were never built for.
+
+`TypeScript` · zero runtime dependencies · `MIT` · [Docs →](https://crxtrace.dev) · [Repo →](https://github.com/sabbir-offc/crxtrace) · [![crxtrace on npm](https://img.shields.io/npm/v/crxtrace?style=flat-square&label=npm&color=58A6FF&labelColor=0D1117)](https://www.npmjs.com/package/crxtrace)
+
+### bd-commerce
+Typed clients for the infrastructure Bangladeshi e-commerce actually runs on — Steadfast, Pathao and
+RedX for delivery, bKash and Nagad for payment. Every shop writes these five integrations and most
+repeat the same expensive mistakes: unsettled delivery statuses treated as final, payments marked paid
+on a redirect that never executed, a retry that ships the parcel twice. This is one careful
+implementation with those designed out.
+
+`TypeScript` · zero runtime dependencies · `MIT` · [Repo →](https://github.com/sabbir-offc/bd-commerce) · [![bd-commerce on npm](https://img.shields.io/npm/v/bd-commerce?style=flat-square&label=npm&color=58A6FF&labelColor=0D1117)](https://www.npmjs.com/package/bd-commerce)
+
 ## Selected Work
 
 ### NeX OS
