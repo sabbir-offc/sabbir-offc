@@ -12,28 +12,28 @@
         fill="#0D1117" stroke="#30363D"/>
   <text class="t" x="18" y="28">Languages</text>
   <text class="s" x="18" y="50">31.4 MB across 154 repos · by bytes</text>
-  <rect x="18.00" y="72" width="312.44" height="13" fill="#3178c6"/>
-  <rect x="330.44" y="72" width="26.28" height="13" fill="#f1e05a"/>
-  <rect x="356.72" y="72" width="9.35" height="13" fill="#00ADD8"/>
-  <rect x="366.07" y="72" width="5.76" height="13" fill="#663399"/>
-  <rect x="371.82" y="72" width="4.52" height="13" fill="#e34c26"/>
-  <rect x="376.34" y="72" width="1.76" height="13" fill="#f34b7d"/>
-  <rect x="378.10" y="72" width="1.63" height="13" fill="#89e051"/>
-  <rect x="379.73" y="72" width="0.75" height="13" fill="#3572A5"/>
+  <rect x="18.00" y="72" width="312.05" height="13" fill="#3178c6"/>
+  <rect x="330.05" y="72" width="26.29" height="13" fill="#f1e05a"/>
+  <rect x="356.34" y="72" width="9.62" height="13" fill="#00ADD8"/>
+  <rect x="365.96" y="72" width="5.78" height="13" fill="#663399"/>
+  <rect x="371.74" y="72" width="4.52" height="13" fill="#e34c26"/>
+  <rect x="376.26" y="72" width="1.76" height="13" fill="#f34b7d"/>
+  <rect x="378.02" y="72" width="1.63" height="13" fill="#89e051"/>
+  <rect x="379.65" y="72" width="0.83" height="13" fill="#3572A5"/>
   <rect x="380.47" y="72" width="0.60" height="13" fill="#6b7f9c"/>
   <rect x="381.03" y="72" width="0.60" height="13" fill="#A97BFF"/>
   <rect x="381.53" y="72" width="0.60" height="13" fill="#384d54"/>
   <rect x="381.82" y="72" width="0.60" height="13" fill="#336790"/>
   <rect x="381.99" y="72" width="0.60" height="13" fill="#ac7777"/>
   <rect x="382.00" y="72" width="0.60" height="13" fill="#F05138"/>
-  <circle cx="24" cy="110" r="6" fill="#3178c6"/><text class="l" x="38" y="114">TypeScript</text><text class="m" x="380" y="114" text-anchor="end">85.8%</text>
+  <circle cx="24" cy="110" r="6" fill="#3178c6"/><text class="l" x="38" y="114">TypeScript</text><text class="m" x="380" y="114" text-anchor="end">85.7%</text>
   <circle cx="24" cy="137" r="6" fill="#f1e05a"/><text class="l" x="38" y="141">JavaScript</text><text class="m" x="380" y="141" text-anchor="end">7.2%</text>
   <circle cx="24" cy="164" r="6" fill="#00ADD8"/><text class="l" x="38" y="168">Go</text><text class="m" x="380" y="168" text-anchor="end">2.6%</text>
   <circle cx="24" cy="191" r="6" fill="#663399"/><text class="l" x="38" y="195">CSS</text><text class="m" x="380" y="195" text-anchor="end">1.6%</text>
   <circle cx="24" cy="218" r="6" fill="#e34c26"/><text class="l" x="38" y="222">HTML</text><text class="m" x="380" y="222" text-anchor="end">1.2%</text>
   <circle cx="24" cy="245" r="6" fill="#f34b7d"/><text class="l" x="38" y="249">C++</text><text class="m" x="380" y="249" text-anchor="end">0.48%</text>
   <circle cx="24" cy="272" r="6" fill="#89e051"/><text class="l" x="38" y="276">Shell</text><text class="m" x="380" y="276" text-anchor="end">0.45%</text>
-  <circle cx="24" cy="299" r="6" fill="#3572A5"/><text class="l" x="38" y="303">Python</text><text class="m" x="380" y="303" text-anchor="end">0.21%</text>
+  <circle cx="24" cy="299" r="6" fill="#3572A5"/><text class="l" x="38" y="303">Python</text><text class="m" x="380" y="303" text-anchor="end">0.23%</text>
   <circle cx="24" cy="326" r="6" fill="#6b7f9c"/><text class="l" x="38" y="330">PowerShell</text><text class="m" x="380" y="330" text-anchor="end">0.15%</text>
   <circle cx="24" cy="353" r="6" fill="#A97BFF"/><text class="l" x="38" y="357">Kotlin</text><text class="m" x="380" y="357" text-anchor="end">0.14%</text>
   <text class="k" x="18" y="398">+4 MORE UNDER 0.1%</text>
